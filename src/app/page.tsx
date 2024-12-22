@@ -1,8 +1,24 @@
+'use client'
+import { Name, Email, Passoword, ConfirmPassword, Submit } from "./components/forms";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Apple, Facebook } from "lucide-react";
+import { useState } from "react";
+
 
 export default function Home() {
+  const [step, setStep] = useState("email")
+  const [email, setEmail] = useState("")
+
+  const handleEmailSubmit = () => {
+    if (email === "teste@teste.com") {
+      setStep("passoword")
+    } else {
+      setStep("register")
+    }
+  }
+
   return (
     <div className="bg-slate-900 h-full w-full">
       <div className="flex flex-col items-center justify-center h-full">
@@ -37,19 +53,31 @@ export default function Home() {
             <div className="h-[1px] w-full bg-slate-900"></div>
           </div>
 
-          <form className="flex flex-col gap-2">
-            <input
-              type="email"
-              placeholder="Email..."
-              className="border border-slate-700/60 rounded-xl w-full p-4 py-3 outline-none"
-              aria-label="Digite seu email"
-            />
+          {step === "email" && (
+            <>
+            <form className="flex flex-col gap-2">
+            <Email/>
             <input
               type="submit"
               value="Continuar"
               className="border text-white font-medium bg-slate-900 rounded-xl w-full p-2 py-3"
             />
           </form>
+            </>
+          )}
+
+          {step === "password" && (
+            <>
+            
+            </>
+          )}
+
+          {step === "register" && (
+            <>
+            
+            </>
+          )}
+          
         </div>
       </div>
     </div>

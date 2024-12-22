@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+```markdown
+# TaskSphere
 
-## Getting Started
+TaskSphere é um aplicativo de gerenciamento de tarefas focado em dispositivos móveis, projetado para ajudar os usuários a organizar suas atividades diárias de forma simples e eficiente, com uma interface otimizada para smartphones.
 
-First, run the development server:
+## Tecnologias Usadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js** - Framework React para construção de interfaces dinâmicas e responsivas.
+- **TypeScript** - Linguagem de programação que adiciona tipagem estática ao JavaScript.
+- **Tailwind CSS** - Framework CSS utilitário para estilização rápida e responsiva.
+- **Lucide Icons** - Biblioteca de ícones em SVG para personalizar a interface.
+
+## Funcionalidades
+
+- **Criação de tarefas**: Adicione tarefas de forma simples.
+- **Visualização de tarefas**: Veja todas as tarefas de maneira organizada.
+- **Login social**: Integração com Google e Apple para login rápido.
+- **Responsividade**: O aplicativo é otimizado para dispositivos móveis, oferecendo uma experiência fluida em smartphones.
+
+## Como Rodar o Projeto
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/SEUNOME/task-sphere.git
+   ```
+
+2. **Instale as dependências:**
+
+   Navegue até o diretório do projeto e execute:
+
+   ```bash
+   npm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento:**
+
+   Depois de instalar as dependências, inicie o servidor:
+
+   ```bash
+   npm run dev
+   ```
+
+   O aplicativo estará disponível em [http://localhost:3000](http://localhost:3000).
+
+## Contato
+
+Se você tiver dúvidas ou quiser entrar em contato, me mande um e-mail para [bielgaelzermachado@gmail.com](mailto:bielgaelzermachado@gmail.com).
+
+Siga-me também nas redes sociais:
+
+- [Instagram](https://www.instagram.com/gabriel_gaelzer/)
+- [LinkedIn](https://www.linkedin.com/in/gabrielgmachado-199a06312/)
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
