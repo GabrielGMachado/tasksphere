@@ -25,7 +25,7 @@ export default function Home() {
             </Link> 
 
             <Link href="/" className="border border-black w-full flex justify-center py-3.5 rounded-xl">
-              <button className="flex gap-2 font-bold" >
+              <button className="flex gap-2 font-bold">
               <Apple /> Apple
               </button>
             </Link> 
