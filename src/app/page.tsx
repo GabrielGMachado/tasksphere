@@ -15,7 +15,7 @@ export default function Home() {
         </div>
 
         <div className="absolute max-w-md bottom-0 h-96 w-full bg-white rounded-tr-xl rounded-tl-xl p-5">
-          <h1 className="text-2xl font-medium">Entrar com</h1>
+          <h1 className="text-[20px] font-semibold">Entrar com</h1>
 
           <div className="flex justify-between mt-5 gap-4">
             <Link href="/" className="border border-black w-full flex justify-center py-3.5 rounded-xl">
