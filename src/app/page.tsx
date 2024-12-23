@@ -11,9 +11,10 @@ export default function Home() {
   const [step, setStep] = useState("email")
   const [email, setEmail] = useState("")
 
-  const handleEmailSubmit = () => {
+  const handleEmailSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     if (email === "teste@teste.com") {
-      setStep("passoword")
+      setStep("password")
     } else {
       setStep("register")
     }
@@ -30,7 +31,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute max-w-md bottom-0 h-96 w-full bg-white rounded-tr-xl rounded-tl-xl p-5">
+        <div className="absolute bottom-0 max-w-md w-full bg-white rounded-tr-xl rounded-tl-xl p-5">
           <h1 className="text-[20px] font-semibold">Entrar com</h1>
 
           <div className="flex justify-between mt-5 gap-4">
@@ -42,7 +43,7 @@ export default function Home() {
 
             <Link href="/" className="border border-black w-full flex justify-center py-3.5 rounded-xl">
               <button className="flex gap-2 font-bold">
-              <Apple /> Apple
+                <Apple /> Apple
               </button>
             </Link> 
           </div>
@@ -55,29 +56,35 @@ export default function Home() {
 
           {step === "email" && (
             <>
-            <form className="flex flex-col gap-2">
-            <Email/>
-            <input
-              type="submit"
-              value="Continuar"
-              className="border text-white font-medium bg-slate-900 rounded-xl w-full p-2 py-3"
-            />
-          </form>
+              <form onSubmit={handleEmailSubmit} className="flex flex-col gap-2">
+                <Email value={email} onChange={(e) => setEmail(e.target.value)} />
+                <Submit />
+              </form>
             </>
           )}
 
           {step === "password" && (
             <>
-            
+              <form onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-2">
+                <Email value={email} onChange={(e) => setEmail(e.target.value)} />
+                <Passoword />
+                <Submit />
+              </form>
             </>
           )}
 
           {step === "register" && (
             <>
-            
+              <form onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-2">
+                <Name />
+                <Email value={email} onChange={(e) => setEmail(e.target.value)} />
+                <Passoword />
+                <ConfirmPassword />
+                <Submit />
+              </form>
             </>
           )}
-          
+
         </div>
       </div>
     </div>
