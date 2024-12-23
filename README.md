@@ -1,4 +1,3 @@
-```markdown
 # TaskSphere
 
 TaskSphere é um aplicativo de gerenciamento de tarefas focado em dispositivos móveis, projetado para ajudar os usuários a organizar suas atividades diárias de forma simples e eficiente, com uma interface otimizada para smartphones.
@@ -22,7 +21,7 @@ TaskSphere é um aplicativo de gerenciamento de tarefas focado em dispositivos m
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/SEUNOME/task-sphere.git
+   git clone https://github.com/GabrielGMachado/tasksphere.git
    ```
 
 2. **Instale as dependências:**
