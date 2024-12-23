@@ -1,5 +1,5 @@
 'use client'
-import { Name, Email, Passoword, ConfirmPassword, Submit } from "./components/forms";
+import { Name, Email, Passoword, ConfirmPassword, Submit } from "../components/forms";
 
 import Image from "next/image";
 import Link from "next/link";

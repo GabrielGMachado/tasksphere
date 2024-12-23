@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-zinc-500 antialiased w-screen h-screen flex justify-center ${almarai.className}`}>
+        className={`bg-white antialiased w-screen h-screen flex justify-center ${almarai.className}`}>
         <div className="max-w-md w-full">
           {children}
         </div>
