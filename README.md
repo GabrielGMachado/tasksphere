@@ -1,4 +1,3 @@
-```markdown
 # TaskSphere
 
 TaskSphere é um aplicativo de gerenciamento de tarefas focado em dispositivos móveis, projetado para ajudar os usuários a organizar suas atividades diárias de forma simples e eficiente, com uma interface otimizada para smartphones.
