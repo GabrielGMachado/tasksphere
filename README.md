@@ -21,7 +21,7 @@ TaskSphere é um aplicativo de gerenciamento de tarefas focado em dispositivos m
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/SEUNOME/task-sphere.git
+   git clone https://github.com/GabrielGMachado/tasksphere.git
    ```
 
 2. **Instale as dependências:**
