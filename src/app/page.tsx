@@ -3,7 +3,7 @@
 import { Name, Email, Passoword, ConfirmPassword, Submit } from "../components/forms";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useRouter } from 'next/navigation';
 import { FaApple, FaGoogle } from "react-icons/fa";
 
@@ -46,7 +46,7 @@ export default function Home() {
     if (isFirstLogin) {
       router.push('/welcome'); 
     } else {
-      router.push('/home'); 
+      router.push('/dashboard'); 
     }
   };
 
